@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowSwitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="header-name">GlowSwitch</h1>
+
+    <img src="./off.png" alt="Off bulb" class="img-bulb" id="bulb-img">
+
+    <div class="btn-container">
+        <button type="button" class="btn" onclick="bulbon()">
+            ON
+        </button>
+        <button type="button" class="btn" onclick="bulboff()">
+            OFF
+        </button>
+    </div>
+
+    <script>
+        function bulbon(){
+            const bulbimg = document.getElementById("bulb-img")
+            bulbimg.src = "./on.png"
+        }
+        function bulboff(){
+            const bulbimg = document.getElementById("bulb-img")
+            bulbimg.src = "./off.png"
+        }
+    </script>
+</body>
+</html>
